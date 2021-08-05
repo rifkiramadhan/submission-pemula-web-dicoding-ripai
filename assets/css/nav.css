@@ -1,0 +1,120 @@
+/* 
+ * Navbar
+ */
+
+ nav li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+nav {
+    display: flex;
+    background-color: #2C394B;
+    justify-content: space-around;
+    color: lightblue;
+    height: 50px;
+    align-items: center;
+    padding: 5px;
+	position: sticky;
+	top: 0;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+nav a {
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+nav a:hover {
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: lightcyan;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+nav ul li a.login {
+    padding: 5px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    background-color: #716F81;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+
+/* 
+ * Hamburger Menu 
+ */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: lightcyan;
+    border-radius: 3px;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+/* 
+ * Hamburger Menu Animation 
+ */
+ 
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}

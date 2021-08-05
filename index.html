@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+
+    <link rel="shortcut icon" href="assets/img/icon-book.png">
+
+    <link rel="stylesheet" href="assets/css/content.css">
+    <link rel="stylesheet" href="assets/css/content_book.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<header>
+	<div class="jumbotron" id="jumbotron">
+        <marquee direction="up" height="25"><hr></marquee><br>
+		<h1>Bookshelf</h1>
+        <marquee direction="down" height="25"><hr></marquee>    
+    </div>
+    <nav>
+        <div class="logo">
+            <a href="#jumbotron"><img src="assets/img/icon-book.png" width="40px" alt=""></a>
+        </div>
+
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#dibaca">Dibaca</a></li>
+            <li><a href="#selesai">Selesai</a></li>
+            <li><a href="#cari">Cari</a></li>
+            <li><a class="login" href="#">Login</a></li>
+        </ul>
+
+        <div class="menu-toggle">
+            <input type="checkbox" name="" id="">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+
+<main>
+	<div id="content">
+        <article id="cari" class="card-search">
+            <img src="assets/img/undraw_book_lover_mkck.svg" alt="Gambar Sticker Buku">
+            <div id="searchBox" class="box">
+                <form class="form" action="#" id="formSearch">
+                    <input type="text" id="search" name="search" placeholder="Cari">
+                    <input type="submit" id="submitSearch" class="material-icons" value="search">
+                </form>
+            </div>
+        </article>
+
+        <article class="card">
+            <section class="input_section">
+                <div id="container">
+                    <div id="inputBook" class="box">
+                        <div class="title">
+                            <h2>Masukkan Data Buku</h2>
+                        </div>
+                        <div class="bodyInput">
+                            <form class="form" action="#" id="formBook">
+                                <div class="rowFull">
+                                    <label for="bookTitle">Judul Buku</label>
+                                    <input type="text" id="bookTitle" placeholder="Ex: Dilan" class="input" name="bookTitle" required>
+                                </div>
+                                <div class="row">
+                                    <div class="col colRight">
+                                        <label for="author">Nama Penulis</label>
+                                        <input type="text" id="author" placeholder="Ex: Ripai" class="input" name="author" required>
+                                    </div>
+                                    <div class="col">
+                                        <label for="year">Tahun Terbit</label>
+                                        <input type="number" id="year" placeholder="Ex: 2021" class="input" name="year" required>
+                                    </div>
+                                </div>
+                                <div class="rowFull checkbox">
+                                    <label for="read">Selesai Dibaca</label>
+                                    <input type="checkbox" id="read" name="read">
+                                </div>
+                                <input type="submit" class="material-icons" id="submit" value="add_circle">
+            
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <article id="dibaca" class="card-read">
+            <div id="unCompleteRead" class="box">
+              <div class="title">
+                  <h2>Belum Selesai Di Baca</h2>
+              </div>
+              <div id="bodyUnComplete"></div>
+            </div>
+        </article>
+    </div>
+
+    <aside>
+      <article id="selesai" class="card card-book">
+        <div id="completeRead" class="box">
+          <div class="title">
+              <h2>Selesai Di Baca</h2>
+          </div>
+          <div id="bodyComplete"></div>
+        </div>
+	  </article>
+	</aside>
+</main>
+
+    <footer>
+        <p id="keterangan">Submission Dicoding Front-End Web Untuk Pemula &#169; 2021.</p>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/dom.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/nav.js"></script>
+</body>
+</html>

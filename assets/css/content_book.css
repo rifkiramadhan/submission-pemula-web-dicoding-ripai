@@ -1,0 +1,162 @@
+/* 
+ * Content Book 
+ */
+
+#container {
+    margin: auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.box {
+    border-radius: 30px;
+    margin: 0 auto 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+marquee {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.title h2 {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Pacifico', cursive;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+input.input {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.row {
+    display: flex;
+    margin: 5px 0;
+}
+
+.col {
+    flex: 1;
+    width: 50%;
+}
+
+.colRight {
+    margin-right: 10px;
+}
+
+.checkbox label {
+    display: inline-block;
+    line-height: 20px;
+}
+
+.checkbox input {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 10px;
+    position: relative;
+    top: 7px;
+}
+
+input.material-icons, #submit {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: #716F81;
+    color: whitesmoke;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#searchBox {
+    text-align: center;
+}
+
+#searchBox #search {
+    width: 75%;
+    height: 35px;
+    border-radius: 10px;
+}
+
+#searchBox #submitSearch {
+    width: 20%;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#bodyUnComplete {
+    text-align: center;
+    font-size: 14px;
+}
+
+#bodyComplete {
+    text-align: center;
+    font-size: 14px;
+}
+
+.book {
+    box-sizing: content-box;
+    text-align: left;
+    display: inline-block;
+    padding: 10px;
+    width: 200px;
+    height: 150px;
+    font-size: small;
+    border: black solid 1px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 0 5px 10px;
+}
+
+.book h3 {
+    margin: 0;
+}
+
+.bookButton {
+    text-align: center;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+button.material-icons, .bookButton .doneReadBtn {
+    width: 75px;
+    height: 50px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background-color: #716F81;
+    color: #fff;
+    cursor: pointer;
+}
+
+button.material-icons, .bookButton .unReadBtn {
+    width: 75px;
+    height: 50px;
+    margin-right: 5px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button.material-icons, .bookButton .deleteBtn {
+    width: 75px;
+    height: 50px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
